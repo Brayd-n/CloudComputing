@@ -15,8 +15,8 @@ jobs:
       - name: Build step
         run: echo "Build OK - HTML validated"
 
-  depoy:
-    r: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
     needs: build   # This ensures deploy runs only if build is successful
     steps:
       - name: Checkout repository
